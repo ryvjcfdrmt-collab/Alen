@@ -1,0 +1,344 @@
+/* =========================================================
+   RESETEO GENERAL
+   Normaliza márgenes y paddings para un diseño consistente
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   CONFIGURACIÓN GLOBAL DEL DOCUMENTO
+========================================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #1E293B;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   CONTENEDOR CENTRAL
+   Mantiene el contenido alineado y con ancho controlado
+========================================================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   TIPOGRAFÍA PRINCIPAL
+========================================================= */
+h1,
+h2,
+h3,
+nav a,
+.btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================================
+   ENCABEZADO PRINCIPAL
+========================================================= */
+header {
+    background-color: #0F171A;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Distribuye logo y navegación horizontalmente */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajusta el tamaño visual del logo */
+.logo img {
+    width: 150px;
+    height: 75px;
+    border-radius: 8px;
+}
+
+/* Organización horizontal de los enlaces */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* Apariencia de los enlaces de navegación */
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Efecto visual al pasar el cursor */
+.nav-links a:hover {
+    color: #22C55E;
+}
+
+/* =========================================================
+   SECCIÓN HERO
+========================================================= */
+.hero {
+    background-color: #FFFFFF;
+    padding: 120px 0;
+}
+
+/* Distribuye el contenido en dos columnas */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Define ancho flexible para ambas columnas */
+.hero-text,
+.hero-image {
+    flex: 1;
+}
+
+/* Título principal destacado */
+.hero-text h1 {
+    font-size: 60px;
+    color: #0F171A;
+    margin-bottom: 20px;
+}
+
+/* Texto descriptivo debajo del título */
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* Estilo visual del botón principal */
+.btn {
+    display: inline-block;
+    background-color: #22C55E;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Animación visual al interactuar con botones */
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #16A34A;
+}
+
+/* Imagen de perfil circular */
+.hero-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================================
+   ESTILO GENERAL DE TÍTULOS DE SECCIÓN
+========================================================= */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #0F171A;
+    margin-bottom: 15px;
+}
+
+/* =========================================================
+   SECCIÓN DE PROYECTOS
+========================================================= */
+.projects {
+    background-color: #F1F5F9;
+    padding: 100px 0;
+}
+
+/* Grid flexible para las tarjetas */
+.project-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Diseño individual de cada proyecto */
+.project-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+/* Movimiento suave al pasar el cursor */
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Ajuste visual de imágenes */
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Espaciado interno del contenido */
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    margin-bottom: 12px;
+    color: #0F171A;
+}
+
+/* =========================================================
+   SECCIÓN DE HABILIDADES
+========================================================= */
+.skills {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+/* Distribución horizontal adaptable */
+.skills-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas simples para habilidades */
+.skill-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #F1F5F9;
+    padding: 40px 20px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* Efecto visual interactivo */
+.skill-card:hover {
+    background-color: #22C55E;
+    color: #FFFFFF;
+    transform: translateY(-5px);
+}
+
+/* =========================================================
+   SECCIÓN DE CONTACTO
+========================================================= */
+.contact {
+    background-color: #F1F5F9;
+    padding: 100px 0;
+}
+
+/* Organización en dos columnas */
+.contact-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-text,
+.contact-form {
+    flex: 1;
+}
+
+/* Título principal de contacto */
+.contact-text h2 {
+    font-size: 48px;
+    color: #0F171A;
+    margin-bottom: 20px;
+}
+
+/* Formulario visualmente separado */
+.contact-form form {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Campos de entrada estilizados */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Resalta el campo activo */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #22C55E;
+}
+
+/* =========================================================
+   PIE DE PÁGINA
+========================================================= */
+footer {
+    background-color: #0F171A;
+    padding: 40px 0;
+    color: #FFFFFF;
+}
+
+/* Centra el contenido verticalmente */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Distribución horizontal de redes */
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+/* Apariencia de enlaces sociales */
+.social-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+/* Cambio de color al interactuar */
+.social-links a:hover {
+    color: #22C55E;
+}
